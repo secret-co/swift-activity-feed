@@ -28,8 +28,7 @@ let package = Package(
                 "Nuke",
                 "Reusable",
                 "SnapKit"
-            ],
-            path: "Sources"
+            ]
         ),
     ]
 )
