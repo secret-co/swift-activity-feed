@@ -11,7 +11,8 @@ let package = Package(
     products: [
         .library(
             name: "GetStreamActivityFeed",
-            targets: ["GetStreamActivityFeed"]),
+            targets: ["GetStreamActivityFeed"]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/GetStream/stream-swift", .upToNextMajor(from: "2.2.0")),
@@ -28,6 +29,7 @@ let package = Package(
                 "Reusable",
                 "SnapKit"
             ],
-            path: "Sources/"),
+            path: "Sources"
+        ),
     ]
 )
