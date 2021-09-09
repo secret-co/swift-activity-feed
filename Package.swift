@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -22,7 +22,12 @@ let package = Package(
     targets: [
         .target(
             name: "GetStreamActivityFeed",
-            dependencies: ["GetStream", "Nuke", "Reusable", "SnapKit"],
+            dependencies: [
+                .product(name: "GetStream", package: "stream-swift"),
+                "Nuke",
+                "Reusable",
+                "SnapKit"
+            ],
             path: "Sources/"),
     ]
 )
